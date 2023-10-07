@@ -14,6 +14,6 @@ public class Q2_printsum {
 		System.out.println("The sum is: "+sum);
 		sc.close();
 		}
-		}
+		
 	}
-}
+
