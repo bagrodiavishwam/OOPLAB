@@ -40,6 +40,8 @@ public class Exercise2 {
 			}
 			System.out.println();
 		}
+		Exercise2 ob=new Exercise2();
+		ob.newArray();
 		
 		
 		
