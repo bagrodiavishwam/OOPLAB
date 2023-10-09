@@ -17,7 +17,7 @@ public class Q1b {
 			System.out.println(String.valueOf(f).toUpperCase());
 			if(f==true)
 				t++;
-			if(f==false)
+			else if(f==false)
 				t=0;
 			
 			if(t==3) {
