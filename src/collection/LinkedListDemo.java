@@ -1,6 +1,6 @@
-// package bitsoop.collections;
+package collection;
 
-import java.util.LinkedList;
+import java.util.*;
 
 public class LinkedListDemo {
 
@@ -8,9 +8,9 @@ public class LinkedListDemo {
         LinkedList<String> ll = new LinkedList<String>();
         LinkedList<String> l1 = new LinkedList<String>();
 
-        System.out.println(ll.getFirst());
-        System.out.println(ll.peekFirst());
-        System.out.println(ll.peekLast());
+//        System.out.println(ll.getFirst());
+//        System.out.println(ll.peekFirst());
+//        System.out.println(ll.peekLast());
         ll.add("F");
         ll.add("B");
         ll.add("D");
@@ -18,9 +18,12 @@ public class LinkedListDemo {
         ll.add("C");
         ll.addLast("Z");
         ll.addFirst("A");
+        System.out.println(ll.getFirst());
+        System.out.println(ll.peekFirst());
+        System.out.println(ll.peekLast());
         System.out.println("Contents of ll: " + ll);
         System.out.println("First --> "+ ll.getFirst());
-        System.out.println("First --> "+ ll.getLast());
+        System.out.println("Last --> "+ ll.getLast());
         ll.add(1, "A2");
 
         System.out.println("Final contents of ll: " + ll);
@@ -39,5 +42,12 @@ public class LinkedListDemo {
         ll.set(2, val + " Changed");
 
         System.out.println("ll after change: " + ll);
+        
+        ListIterator<String> litr=ll.listIterator();
+        for (String i: ll) {
+        	l1.addFirst(i);
+//        	ll.removeLast();
+        }
+        System.out.println("ll after change: " + l1);
     }
 }

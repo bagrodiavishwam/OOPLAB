@@ -1,8 +1,10 @@
 package collection;
-import java.util.*;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+
 public class LinkedHashSetDemo {
-	public static void main(String[] args) {
-        HashSet<String> hs = new HashSet<String>();
+    public static void main(String[] args) {
+        LinkedHashSet<String> hs = new LinkedHashSet<String>();
 
         hs.add("Beta");
         hs.add("Alpha");
@@ -10,10 +12,7 @@ public class LinkedHashSetDemo {
         hs.add("Gamma");
         hs.add("Epsilon");
         hs.add("Omega");
-        hs.add("Omega");
-        hs.add(null);
 
         System.out.println(hs);
     }
-}
 }
