@@ -31,7 +31,7 @@ class Composite implements Component{
 	@Override
 	public void showPrice() {
 		// TODO Auto-generated method stub
-		
+		System.out.println(name);
 	}
 	
 }
