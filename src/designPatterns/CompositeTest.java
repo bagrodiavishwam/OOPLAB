@@ -16,7 +16,18 @@ public class CompositeTest {
 		Composite computer = new Composite("Computer");
 		
 		ph.addComponent(mouse);
+		ph.addComponent(monitor);
 		
+		mb.addComponent(cpu);
+		mb.addComponent(ram);
+		
+		cabinet.addComponent(hd);
+		cabinet.addComponent(mb);
+		
+		computer.addComponent(ph);
+		computer.addComponent(cabinet);
+		
+		ram.showPrice();
 	}
 }
 
